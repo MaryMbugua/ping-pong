@@ -1,0 +1,26 @@
+/* BACKGROUND */
+body{background-image: url(https://images.unsplash.com/photo-1497174247343-5d86ed5c6987?auto=format&fit=crop&w=1336&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D)}
+/* HEADER */
+
+header{text-align: center;
+        color: #ffffff;
+        font-size: 80px;
+        padding-top: 2%;
+        padding-bottom: 4%;}
+
+.rules{color: #ffffff;
+        font-size: 40px;}
+strong{color: #000000;}
+
+.btn{background-color: #000000;
+    color: #ffffff;
+    border-color: #000000;}
+
+.form-group{color: #ffffff;
+    font-size: 50px;}
+
+p{color: #ffffff;}
+h6{color: #ffffff;
+    font-size: 50px;
+    text-align: center;}
+    

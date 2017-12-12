@@ -11,31 +11,64 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
 <body>
+<header>PING PONG</header>
+    <div class="container">
+<div class="row">
+    <div class="col-lg-6 rules">
+                <h2>Let's Play!</h2>
+                <h3>Rules:</h3>
+                <h4>Ping Pong will count up to your number from 1 with the following exceptions:</h4>
+                <ol>
+                    <li>Numbers divisible by <strong>3</strong> will become <strong>ping</strong></li>
+                    <li>Numbers divisible by <strong>5</strong> will become <strong>pong</strong></li>
+                    <li>Numbers divisible by <strong>3</strong> and <strong>5</strong> will become <strong>pingpong</strong></li>
+                </ol>
+    </div>
+    <div class="col-lg-6">
+            <form>
+                <div class="form-group">
+                <label for="enterNumber">Enter your number here</label>
+                <input type="text"  id="userinput">
+                </div>
+                    
+                <button type="submit" class="btn btn-primary" id="submitbutton">PingPong!</button>
+            </form>
+    </div>
 
+<div class="container">
+    <h6>
+        Here are your results!
+    </h6>
+   <p id="display">
 
+   </p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div>
 
     
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- link to jquery -->
     <script src="js/jquery-3.2.1.js"></script>
     <!-- link to bootstrap js -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <!-- link to customized scripts.js -->
-    <script src="js/scripts.js"></script>
+    <!-- link to customized js -->
+    <script src="js/sripts.js"></script>
 </body>
 </html>
