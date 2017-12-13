@@ -1,6 +1,6 @@
 /* BACKGROUND */
 body{background-image: url(https://images.unsplash.com/photo-1497174247343-5d86ed5c6987?auto=format&fit=crop&w=1336&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
-    background-size: inherit;}
+    background-size: cover;}
 /* HEADER */
 
 header{text-align: center;
