@@ -1,33 +1,41 @@
 //Backend function
-function pingPong(usernumber) {
-    if (number % 3 === 0 ){
-      return "ping";
-    }
+var testNumber = [];
 
-    if (number % 5 === 0 ){
-        return "pong";
-      }
-      if (number % 3 === 0  && number % 5 === 0){
-        return "pingpong";
-      }
-    
-     else {
-      return number;
+function pingPong(usernumber){
+    for(var index = 1;index <=usernumber; index++){
+
+        if (index % 3 === 0 ){
+            testNumber.push("ping");
+        }
+
+        if (index % 5 === 0 ){
+            testNumber.push("pong");
+        }
+        if (index % 3 === 0  && index % 5 === 0){
+            testNumber.push("pingpong");
+        }
+            
+        else {
+            testNumber.push(index);
+        }
     }
-  
-  }
+}
 
   //Front end
-  $(document).ready(function() {
+$(document).ready(function() {
     //Button click event
-    $('#submitbutton').click(function(event) {
+    $('form#userpingpong').submit(function(event) {
       event.preventDefault();
       //user input into a var
-      var year = parseInt($('#userinput').val());
+      var usernumber = parseInt($('input#userinput').val());
       //run function save it in a var
-      var result = pingPong(usernumber);
+        pingPong(usernumber);
       //display the result
-      $('#display').html(result);
+      testNumber.forEach(function(item){
+        $('#display').append("<li>" + item + "</li>");
+      });
+
+     
     });
   
-  });
+});
