@@ -12,9 +12,10 @@
 </head>
 <body>
 <header>PING PONG</header>
+
     <div class="container">
-<div class="row">
-    <div class="col-lg-6 rules">
+        <div class="row">
+            <div class="col-lg-6 rules">
                 <h2>Let's Play!</h2>
                 <h3>Rules:</h3>
                 <h4>Ping Pong will count up to your number from 1 with the following exceptions:</h4>
@@ -23,32 +24,25 @@
                     <li>Numbers divisible by <strong>5</strong> will become <strong>pong</strong></li>
                     <li>Numbers divisible by <strong>3</strong> and <strong>5</strong> will become <strong>pingpong</strong></li>
                 </ol>
+            </div>
+            <div class="col-lg-6">
+                <form id="userpingpong">
+                    <div class="form-group">
+                    <label for="enterNumber">Enter your number here</label>
+                    <input type="text" id="userinput">
+                    <button type="submit" class="btn btn-primary" id="submitbutton">PingPong!</button>
+                </form>
+            </div>
+        </div>
     </div>
-    <div class="col-lg-6">
-            <form id="userpingpong">
-                <div class="form-group">
-                <label for="enterNumber">Enter your number here</label>
-                <input type="text" id="userinput">
-                </div>
-                    
-                <button type="submit" class="btn btn-primary" id="submitbutton">PingPong!</button>
-            </form>
+    <div class="container">
+        <h6>Here are your results!</h6>
+        <ul id="display">
+        </ul>
     </div>
 
-<div class="container">
-    <h6>
-        Here are your results!
-    </h6>
-
-   <ul id="display">
-
-   </ul>
-
-</div>
-
-    
-</div>
-</div>
+        
+   
 
     <!-- link to jquery -->
     <script src="js/jquery-3.2.1.js"></script>
